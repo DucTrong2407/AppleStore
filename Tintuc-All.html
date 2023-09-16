@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đức Trọng Mobile - Tin tức</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <!-- Link Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Fonts Google -->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <!-- Swiper JS -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="header__navbar">
+                    <!-- Navbar Mobile -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <div class="header__navbar-logo">
+                        <a href="index.html">DUC TRONG</a>
+                        <a href="./index.html">
+                            <img src="./assets/img/logo-apple1.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- Navbar Mobile -->
+                    <nav class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <!-- <div class="header-links">
+                                <li class="account-desktop__user">
+                                    <a href="./CustomerInfo.html">
+                                        <img src="./assets/img/avatar-user.jpg" alt="">
+                                    </a>
+                                    <span>Đức Trọng</span>
+                                </li>
+                            </div> -->
+                            <!-- <li>
+                                <a href="./CustomerInfo.html">Tài khoản của tôi</a>
+                            </li>
+                            <li class="account-desktop__logout">
+                                <a href="./Login.html">Đăng xuất</a>
+                            </li> -->
+                            <li class="account-desktop__register">
+                                <a href="./Register.html">Tạo tài khoản ngay</a>
+                            </li>
+                            <li class="account-desktop__login">
+                                <a href="./Login.html">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="./Dichvu.html">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="./Tintuc-All.html">Tin tức</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="header__navbar-menu">
+                        <li class="header__navbar-item ">
+                            <a href="./iPhone-All.html" class="header__navbar-item-link">iPhone</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./iPad-All.html" class="header__navbar-item-link">iPad</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Mac-All.html" class="header__navbar-item-link">Mac</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Watch-All.html" class="header__navbar-item-link">Watch</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Airpods-All.html" class="header__navbar-item-link">Âm thanh</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Phukien-All.html" class="header__navbar-item-link">Phụ kiện</a>
+                        </li>
+                        <li class="header__navbar-item ">
+                            <a href="./Dichvu.html" class="header__navbar-item-link">Dịch vụ</a>
+                        </li>
+                        <li class="header__navbar-item header__navbar-item--active">
+                            <a href="./Tintuc-All.html" class="header__navbar-item-link">Tin tức</a>
+                        </li>
+                    </ul>
+
+                    <div class="js-search header__navbar-wrapper">
+                        <div class="header__navbar-search">
+                            <a href="#" class="header__navbar-wrapper-link">
+                                <i class="header__navbar-wrapper-icon fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <!-- Cart layout-->
+                        <div class="header__navbar-cart">
+                            <div class="header__navbar-cart-wrap">
+                                <a href="./Cart.html" class="header__navbar-wrapper-link">
+                                    <i class="header__navbar-wrapper-icon fa-solid fa-bag-shopping"></i>
+                                    <span class="header__navbar-cart-notice">3</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- User layout -->
+                        <div class="header__navbar-user">
+                            <a href="" class="header__navbar-wrapper-link">
+                                <i class="header__navbar-wrapper-icon fa-regular fa-user"></i>
+                            </a>
+                            <!-- Chưa Login -->
+                            <div class="header-links">
+                                <ul class="account-desktop">
+                                    <li class="account-desktop__register">
+                                        <a href="./Register.html">Tạo tài khoản ngay</a>
+                                    </li>
+                                    <li class="account-desktop__login">
+                                        <a href="./Login.html">Đăng nhập</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Đã Login -->
+                            <!-- <div class="header-links">
+                                <ul class="account-desktop">
+                                    <li class="account-desktop__user">
+                                        <a href="./CustomerInfo.html">
+                                            <img src="./assets/img/avatar-user.jpg" alt="">
+                                        </a>
+                                        <span>Đức Trọng</span>
+                                    </li>
+                                    <li class="account-desktop__CustomerInfo">
+                                        <a href="./CustomerInfo.html">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="account-desktop__CustomerLogout">
+                                        <a href="./Login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="modal-search">
+                        <div class="header__search js-modal-container">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm" autocomplete="off" />
+                                <div class="header__search-history">
+                                    <small class="quicklink">Có phải bạn muốn tìm</small>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">iPhone 14 Pro Max</a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">iPhone 14 Pro</a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">MacBook M1 2020</a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">Apple Watch Series 8</a>
+                                        </li>
+                                    </ul>
+                                    <small class="quicklink">Sản phẩm gợi ý</small>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">
+                                                <div class="header__search-img">
+                                                    <img src="./assets/img/iPhone/iphone14/iphone14pro-deeppurple.png" alt="" />
+                                                </div>
+                                                <div class="header__search-text">
+                                                    <span class="header__search-text-title">iPhone 14 Pro Max 6GB/128GB</span>
+                                                    <div class="header__search-prices">
+                                                        <span class="header__search-actual-prices">28.000.000đ</span>
+                                                        <span class="header__search-old-prices">28.000.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">
+                                                <div class="header__search-img">
+                                                    <img src="./assets/img/Watch/Watch-S8-41mm-do.png" alt="" />
+                                                </div>
+                                                <div class="header__search-text">
+                                                    <span class="header__search-text-title">Apple Watch Series 8</span>
+                                                    <div class="header__search-prices">
+                                                        <span class="header__search-actual-prices">28.000.000đ</span>
+                                                        <span class="header__search-old-prices">28.000.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">
+                                                <div class="header__search-img">
+                                                    <img src="./assets/img/AirPods/AirPods Max-black.png" alt="" />
+                                                </div>
+                                                <div class="header__search-text">
+                                                    <span class="header__search-text-title">AirPods Max Blue</span>
+                                                    <div class="header__search-prices">
+                                                        <span class="header__search-actual-prices">28.000.000đ</span>
+                                                        <span class="header__search-old-prices">28.000.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn js-modal-close">
+                                <i class="header__search__icon fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item">
+                        <a href="./iPhone-All.html" class="header__sort-link"> iPhone </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./iPad-All.html" class="header__sort-link"> iPad </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Mac-All.html" class="header__sort-link"> Mac </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Watch-All.html" class="header__sort-link"> Watch </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Airpods-All.html" class="header__sort-link"> Âm thanh </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Phukien-All.html" class="header__sort-link"> Phụ kiện </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="main">
+                <div class="grid wide">
+                    <div class="box-item">
+                        <div class="hight-light-area">
+                            <ul class="newlist-hl">
+                                <li class="first-one">
+                                    <a href="./Tintuc-View.html">
+                                        <div class="wrapper-thumb-title">
+                                            <img src="./assets/img/TinTuc/Tintuc-1.jpg" alt="">
+                                            <h3 class="title">
+                                                3 tính năng thú vị của iOS 16.4 mà bạn không thể bỏ qua
+                                            </h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./Tintuc-View.html">
+                                        <div class="wrapper-thumb-title">
+                                            <img src="./assets/img/TinTuc/Tintuc-2.jpg" alt="">
+                                            <h3 class="title">
+                                                9 cách khắc phục iPhone 6, iPhone 6 Plus, iPhone 6S, iPhone 6S Plus không bắt được WiFi cực dễ dàng
+                                            </h3>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./Tintuc-View.html">
+                                        <div class="wrapper-thumb-title">
+                                            <img src="./assets/img/TinTuc/Tintuc-3.jpg" alt="">
+                                            <h3 class="title">
+                                                Nếu iPad không thay thế được MacBook vậy thì MacBook có thay thế được iPad?
+                                            </h3>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="news-area">
+                            <div class="left-area">
+                                <div class="title-filter">
+                                    <h3>Mới nhất</h3>
+                                </div>
+                                <div class="wrapper-newslist-news1">
+                                    <ul class="news-list news">
+                                        <li>
+                                            <a href="./Tintuc-View.html">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-4.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    iPhone 8, iPhone 8 Plus có sạc nhanh không? Sạc nhanh bao nhiêu W? Bao lâu thì đầy? Đây là câu trả lời
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>7 giờ trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-5.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    Hình nền WWDC 2023 chất lượng 4K, bạn cài ngay để cùng chờ đợi sự kiện công nghệ lớn của Apple
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>1 ngày trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-6.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    Top 5 adapter sạc nhanh PD cho iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max đáng mua
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>1 ngày trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-7.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    Có nên dán bảo vệ camera iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max không?
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>1 ngày trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-8.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    iPhone 8, iPhone 8 Plus có sạc không dây không? Sạc không dây có ảnh hưởng đến pin iPhone 8, iPhone 8 Plus không?
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>2 ngày trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-9.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    5 tai nghe Bluetooth cho iPhone 14, iPhone 14 Plus, iPhone 14 Pro, iPhone 14 Pro Max cực chất lượng
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>2 ngày trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="">
+                                                <div class="news-item__video">
+                                                    <img width="284" height="160" src="./assets/img/TinTuc/Tintuc-10.jpg" alt="">
+                                                </div>
+                                                <h3 class="news-item__title">
+                                                    Cách đưa iPad về DFU để nâng cấp phần mềm hoặc khôi phục lại máy đơn giản và nhanh chóng nhất
+                                                </h3>
+                                                <div class="news-item__timepost">
+                                                    <span>2 ngày trước</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="video-area">
+                            <div class="content-video">
+                                <img src="./assets/img/TinTuc/video-title.png" width="75" height="24">
+                                <div class="video-area">
+                                    <div class="all_content_video">
+                                        <div class="item_video big__vd">
+                                            <iframe title="YouTube video player" src="https://www.youtube.com/embed/69bFJeJiEDg?start=1" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="item_video normal__vd">
+                                            <iframe title="YouTube video player" src="https://www.youtube.com/embed/94ec9ETfps8?start=1" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="item_video normal__vd">
+                                            <iframe title="YouTube video player" src="https://www.youtube.com/embed/FDh8pYtMtIc?start=1" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                        <div class="item_video normal__vd">
+                                            <iframe title="iPhone 14/14 Plus VÀNG chính thức! Máy đã ế còn cho thêm màu ế, nước đi KHÓ HIỂU của Apple?!" src="https://www.youtube.com/embed/k1at0x4Ut1U" width="100%" height="100%" frameborder="0" allowfullscreen=""></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Đăng ký nhận tin -->
+            <div class="footer__newletter">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="heading__newletter-title">Đăng ký nhận tin từ Đức Trọng Mobile</div>
+                        <p class="heading__newletter-info">Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+                        <div class="newletter">
+                            <input id="newletter-email" class="newletter-text" placeholder="Email của bạn" type="email" />
+                            <button type="button" id="newletter-btn" class="newletter-btn">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer__upper">
+                    <div class="grid ">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="header__navbar-logo footer__logo">
+                                    <a href="index.html">DUC TRONG</a>
+                                    <a href="/">
+                                        <img src="./assets/img/logo-apple1.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="footer-follow__about">
+                                    <p class="footer-follow__text">Năm 2023, DucTrong Mobile trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa hàng tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple cho người dùng Việt Nam.</p>
+                                </div>
+                                <div class="footer-follow__socials">
+                                    <ul class="networks">
+                                        <li class="facebook">
+                                            <a href="" class="">
+                                                <img src="./assets/img/facebook.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="tiktok">
+                                            <a href="./assets/img/tiktok.png" class="">
+                                                <img src="./assets/img/tiktok.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="zalo">
+                                            <a href="" class="">
+                                                <img src="./assets/img/zalo.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="youtube">
+                                            <a href="" class="">
+                                                <img src="./assets/img/youtube.png" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-block">
+                                    <div class="footer-title">
+                                        <span>Thông tin</span>
+                                        <i class="footer-icon fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Giới thiệu</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tin tức </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Check IMEI</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Phương thức thanh toán </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Bảo hành và sữa chữa </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tuyển dụng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Đánh giá chất lượng, khiếu nại </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-block">
+                                    <div class="footer-title">
+                                        <span>Chính sách </span>
+                                        <i class="footer-icon fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Thu cũ đổi mới </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Giao hàng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Hủy giao dịch </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Đổi trả </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Bảo hành </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Giải quyết khiếu nại </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Bảo mật thông tin </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Trả góp </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-block">
+                                    <div class="footer-title">
+                                        <span>Địa chỉ và Liên hệ</span>
+                                        <i class="footer-icon fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tài khoản của tôi </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Đơn đặt hàng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Hệ thống cửa hàng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tìm Store trên Goole Map </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Mua hàng: <a href="tel: +84334997497" class="footer-item-tel">033.4997.497</a></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__lower">
+                    <span class="footer__lower-text">© All Rights Reserved By <a href="./index.html" class="footer__lower-text-link">Đức Trọng Mobile</a></span>
+                </div>
+            </footer>
+        <script src="./assets/js/header-search.js"></script>
+        <script src="./assets/js/slider.js"></script>
+
+        <script>
+            // Navbar-tablet-mobile
+            bars = document.querySelector(".burger");
+            navBar = document.querySelector(".nav__mobile");
+
+            bars.onclick = function () {
+                //Toggle Nav
+                navBar.classList.toggle("active");
+                //Burger Animation
+                bars.classList.toggle("toggle");
+            };
+
+            //CheckSize được gọi khi có sự kiện resize của window
+            window.addEventListener("resize", checkSize);
+            checkSize();
+
+            //Footer
+            const footerShows = document.querySelectorAll(".footer-block");
+            
+            footerShows.forEach(function (footerShow) {
+                const footerList = footerShow.querySelector(".footer-list");
+                
+                footerShow.addEventListener("click", function () {
+                    footerList.classList.toggle("show");
+                });
+            });
+        </script>
+    </body>
+</html>

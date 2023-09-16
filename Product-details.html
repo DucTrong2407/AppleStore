@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Đức Trọng Mobile - iPhone 14 Pro Max</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+        <!-- Link Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Link Fonts Google -->
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Poppins:wght@300;400;500;600;700&family=Quicksand:wght@500;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+        <!-- Swiper JS -->
+        <script src="./assets/js/swiper-bundle.min.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <header class="header">
+                <nav class="header__navbar">
+                    <!-- Navbar Mobile -->
+                    <div class="burger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <div class="header__navbar-logo">
+                        <a href="index.html">DUC TRONG</a>
+                        <a href="./index.html">
+                            <img src="./assets/img/logo-apple1.png" alt="" />
+                        </a>
+                    </div>
+                    <!-- Navbar Mobile -->
+                    <nav class="nav__mobile">
+                        <ul class="nav__mobile-list">
+                            <!-- <div class="header-links">
+                                <li class="account-desktop__user">
+                                    <a href="./CustomerInfo.html">
+                                        <img src="./assets/img/avatar-user.jpg" alt="">
+                                    </a>
+                                    <span>Đức Trọng</span>
+                                </li>
+                            </div> -->
+                            <!-- <li>
+                                <a href="./CustomerInfo.html">Tài khoản của tôi</a>
+                            </li>
+                            <li class="account-desktop__logout">
+                                <a href="./Login.html">Đăng xuất</a>
+                            </li> -->
+                            <li class="account-desktop__register">
+                                <a href="./Register.html">Tạo tài khoản ngay</a>
+                            </li>
+                            <li class="account-desktop__login">
+                                <a href="./Login.html">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a href="./Dichvu.html">Dịch vụ</a>
+                            </li>
+                            <li>
+                                <a href="./Tintuc-All.html">Tin tức</a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <ul class="header__navbar-menu">
+                        <li class="header__navbar-item ">
+                            <a href="./iPhone-All.html" class="header__navbar-item-link">iPhone</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./iPad-All.html" class="header__navbar-item-link">iPad</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Mac-All.html" class="header__navbar-item-link">Mac</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Watch-All.html" class="header__navbar-item-link">Watch</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Airpods-All.html" class="header__navbar-item-link">Âm thanh</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Phukien-All.html" class="header__navbar-item-link">Phụ kiện</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Dichvu.html" class="header__navbar-item-link">Dịch vụ</a>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="./Tintuc-All.html" class="header__navbar-item-link">Tin tức</a>
+                        </li>
+                    </ul>
+
+                    <div class="js-search header__navbar-wrapper">
+                        <div class="header__navbar-search">
+                            <a href="#" class="header__navbar-wrapper-link">
+                                <i class="header__navbar-wrapper-icon fa-solid fa-magnifying-glass"></i>
+                            </a>
+                        </div>
+
+                        <!-- Cart layout-->
+                        <div class="header__navbar-cart">
+                            <div class="header__navbar-cart-wrap">
+                                <a href="./Cart.html" class="header__navbar-wrapper-link">
+                                    <i class="header__navbar-wrapper-icon fa-solid fa-bag-shopping"></i>
+                                    <span class="header__navbar-cart-notice">3</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- User layout -->
+                        <div class="header__navbar-user">
+                            <a href="" class="header__navbar-wrapper-link">
+                                <i class="header__navbar-wrapper-icon fa-regular fa-user"></i>
+                            </a>
+                            <!-- Chưa Login -->
+                            <div class="header-links">
+                                <ul class="account-desktop">
+                                    <li class="account-desktop__register">
+                                        <a href="./Register.html">Tạo tài khoản ngay</a>
+                                    </li>
+                                    <li class="account-desktop__login">
+                                        <a href="./Login.html">Đăng nhập</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Đã Login -->
+                            <!-- <div class="header-links">
+                                <ul class="account-desktop">
+                                    <li class="account-desktop__user">
+                                        <a href="./CustomerInfo.html">
+                                            <img src="./assets/img/avatar-user.jpg" alt="">
+                                        </a>
+                                        <span>Đức Trọng</span>
+                                    </li>
+                                    <li class="account-desktop__CustomerInfo">
+                                        <a href="./CustomerInfo.html">Tài khoản của tôi</a>
+                                    </li>
+                                    <li class="account-desktop__CustomerLogout">
+                                        <a href="./Login.html">Đăng xuất</a>
+                                    </li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </div>
+
+                    <div class="modal-search">
+                        <div class="header__search js-modal-container">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm" autocomplete="off" />
+                                <div class="header__search-history">
+                                    <small class="quicklink">Có phải bạn muốn tìm</small>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">iPhone 14 Pro Max</a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">iPhone 14 Pro</a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">MacBook M1 2020</a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">Apple Watch Series 8</a>
+                                        </li>
+                                    </ul>
+                                    <small class="quicklink">Sản phẩm gợi ý</small>
+                                    <ul class="header__search-list">
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">
+                                                <div class="header__search-img">
+                                                    <img src="./assets/img/iPhone/iphone14/iphone14pro-deeppurple.png" alt="" />
+                                                </div>
+                                                <div class="header__search-text">
+                                                    <span class="header__search-text-title">iPhone 14 Pro Max 6GB/128GB</span>
+                                                    <div class="header__search-prices">
+                                                        <span class="header__search-actual-prices">28.000.000đ</span>
+                                                        <span class="header__search-old-prices">28.000.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">
+                                                <div class="header__search-img">
+                                                    <img src="./assets/img/Watch/Watch-S8-41mm-do.png" alt="" />
+                                                </div>
+                                                <div class="header__search-text">
+                                                    <span class="header__search-text-title">Apple Watch Series 8</span>
+                                                    <div class="header__search-prices">
+                                                        <span class="header__search-actual-prices">28.000.000đ</span>
+                                                        <span class="header__search-old-prices">28.000.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__search-item">
+                                            <a href="" class="header__search-link">
+                                                <div class="header__search-img">
+                                                    <img src="./assets/img/AirPods/AirPods Max-black.png" alt="" />
+                                                </div>
+                                                <div class="header__search-text">
+                                                    <span class="header__search-text-title">AirPods Max Blue</span>
+                                                    <div class="header__search-prices">
+                                                        <span class="header__search-actual-prices">28.000.000đ</span>
+                                                        <span class="header__search-old-prices">28.000.000đ</span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="header__search-btn js-modal-close">
+                                <i class="header__search__icon fa-solid fa-xmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </nav>
+
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item">
+                        <a href="./iPhone-All.html" class="header__sort-link"> iPhone </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./iPad-All.html" class="header__sort-link"> iPad </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Mac-All.html" class="header__sort-link"> Mac </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Watch-All.html" class="header__sort-link"> Watch </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Airpods-All.html" class="header__sort-link"> Âm thanh </a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="./Phukien-All.html" class="header__sort-link"> Phụ kiện </a>
+                    </li>
+                </ul>
+            </header>
+
+            <div class="main fields">
+                <section data-id="" data-cate-id="" class="detail">
+                    <div class="product-detail">
+                        <div class="grid wide">
+                            <div class="row">
+                                <!-- Left Product-Detail -->
+                                <div class="col l-6 m-12 c-12">
+                                    <aside class="slider-detail">
+                                        <div class="main__image">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple.png" class="slide" width="650" height="650">
+                                        </div>
+                                        <div class="option">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple.png" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple.png')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__1.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__1.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__2.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__2.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__3.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__3.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__4.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__4.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__5.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__5.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__6.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__6.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__7.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__7.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__8.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__8.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__9.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__9.jpg')">
+                                            <img src="./assets/img/iPhone/iphone14/iphone14promax-deeppurple__10.jpg" onclick="img('./assets/img/iPhone/iphone14/iphone14promax-deeppurple__10.jpg')">
+                                        </div>
+                                    </aside>
+                                </div>
+                                <!-- Right Product-Detail -->
+                                <div class="col l-6 m-12 c-12">
+                                    <aside>
+                                <h1>iPhone 14 Pro Max</h1>
+                                <!-- Giá -->
+                                <div class="prices">
+                                    <span id="" class="detail-price">26.990.000₫</span>
+                                    <span class="old-detail-price">34.990.000₫</span>
+                                </div>
+                                <!-- Dung lượng -->
+                                <div class="capacity">
+                                    <span>Dung lượng</span>
+                                    <ul>
+                                        <li class="active">
+                                            <a href="">128GB</a>
+                                        </li>
+                                        <li>
+                                            <a href="">256GB</a>
+                                        </li>
+                                        <li>
+                                            <a href="">512GB</a>
+                                        </li>
+                                        <li>
+                                            <a href="">1TB</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Màu -->
+                                <div class="color-sp">
+                                    <span>Màu: Tím</span>
+                                    <ul>
+                                        <li class="active" data-idx="11" data-color="11" data-type="2" data-code="0131491003399" data-name="Màu: Đen">
+                                            <a href="" style="background-color:#403e3d"></a>
+                                        </li>
+                                        <li class="" data-idx="15" data-color="15" data-type="2" data-code="0131491003403" data-name="Màu: Vàng">
+                                            <a href="" style="background-color:#f4e8ce"></a>
+                                        </li>
+                                        <li class="" data-idx="5" data-color="5" data-type="2" data-code="0131491003402" data-name="Màu: Bạc">
+                                            <a href="javascript:;" style="background-color:#f0f2f2"></a>
+                                        </li>
+                                        <li class="" data-idx="9" data-color="9" data-type="2" data-code="0131491003411" data-name="Màu: Tím">
+                                            <a href="javascript:;" style="background-color:#594f63"></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Khuyến mãi -->
+                                <div id="promotion-detail" class="box-promo">
+                                    <span class="title">Khuyến mãi</span>
+                                    <small>Giá và khuyến mãi dự kiến áp dụng đến 23:00 | 26/04</small>
+                                    <div class="content-promo">
+                                        <p>
+                                            <i></i>
+                                            <b>Thu cũ Đổi mới: Giảm đến 2 triệu (Tùy model máy cũ, không kèm các hình thức thanh toán online, mua kèm)
+                                                <a href=""> Xem chi tiết</a>
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <i></i>
+                                            <b>
+                                                Mua kèm iPhone ưu đãi thêm (Tuỳ model và không kèm khuyến mãi khác của sản phẩm mua kèm): 
+                                                <span>
+                                                    - Phụ kiện Apple: Giảm đến 50%.
+                                                    <a href="">Xem chi tiết</a>
+                                                </span>
+                                                <span>- Apple Watch: Giảm đến 27%.
+                                                    <a href="">Xem chi tiết</a>
+                                                </span>
+                                                <span>
+                                                    - iPad: Giảm đến 50%. 
+                                                    <a href="">Xem chi tiết</a>
+                                                </span>
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <i></i>
+                                            <b>
+                                                Nhập mã MM30THANG4 giảm tối đa 100.000đ khi thanh toán qua MOMO
+                                                <a href="">(click xem chi tiết)</a>
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <i></i>
+                                            <b>
+                                                Giảm 100,000đ Cho Đơn Hàng Từ 10 Triệu Khi Thanh Toán Quét Mã Qr Bằng Ứng Dụng Ngân Hàng
+                                                <a href="">(click xem chi tiết)</a>
+                                            </b>
+                                        </p>
+                                        <p>
+                                            <i></i>
+                                            <b>
+                                                Giảm 15% gói Bảo hiểm rơi vỡ 
+                                                <a href="">(click xem chi tiết)</a>
+                                            </b>
+                                        </p>
+                                    </div>
+                                    <p class="text">
+                                        <em class="note">(*)</em>
+                                        Giá hoặc khuyến mãi không áp dụng trả góp lãi suất đặc biệt (0%, 0.5%, 1%)
+                                    </p>
+                                </div>
+                                <!-- Mua hàng -->
+                                <div class="buy-sp">
+                                    <a href="./cart.html" class="cart-btn">Mua ngay</a>
+                                </div>
+                                <ul class="policy">
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-box-open"></i>
+                                            Bộ sản phẩm gồm: Hộp, Sách hướng dẫn, Cây lấy sim, Cáp
+                                            Lightning - Type C
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-rotate"></i>
+                                            Hư gì đổi nấy <b>12 tháng</b> tại Đức Trọng Mobile <a href="#" style="color: #0066cc;"> Xem chi tiết chính sách bảo hành, đổi trả </a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-regular fa-circle-check"></i>
+                                            Bảo hành chính hãng 1 năm
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-truck-fast"></i>
+                                            Giao hàng nhanh toàn quốc
+                                            <a href="#" style="color: #0066cc;">Xem chi tiết</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span>
+                                            <i class="fa-solid fa-phone"></i>
+                                            Gọi đặt mua: <a href="tel:+84334997497" style="color: #0066cc;">0334997497</a> (9h00 -21h00 mỗi ngày)
+                                        </span>
+                                    </li>
+                                </ul  >
+                                    </aside> 
+                                </div>
+                            </div>
+                            <div class="tabs-details">
+                                <p>Thông số kỹ thuật</p>
+                            </div>
+                            <div class="tabs-content">
+                                <table class="data-table">
+                                    <tbody>
+                                        <tr class="odd">
+                                            <td class="spec-name">Dung lượng</td>
+                                            <td class="spec-value">256GB</td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="spec-name">Màn hình</td>
+                                            <td class="spec-value">6.7″Super Retina XDR display</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="spec-name">Độ phân giải màn hình</td>
+                                            <td class="spec-value">2796 ‑ x 1290 pixel ở 460 ppi</td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="spec-name">Camera trước</td>
+                                            <td class="spec-value">12MP, khẩu độ ƒ / 1.9</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="spec-name">Pin</td>
+                                            <td class="spec-value">Phát video lên tới 29 giờ (theo Apple)</td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="spec-name">Sạc</td>
+                                            <td class="spec-value">Sạc không dây MagSafe và Qi</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="spec-name">Kết nối mạng</td>
+                                            <td class="spec-value">	2 SIM (1 Nano SIM và 1 eSIM hoặc 2 eSIM), hỗ trợ 5G</td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="spec-name">Chip</td>
+                                            <td class="spec-value">Chip A16 Bionic,CPU 6 nhân, GPU 5 lõi, 16-core Neural Engine</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="spec-name">RAM</td>
+                                            <td class="spec-value">6GB</td>
+                                        </tr>
+                                        <tr class="even">
+                                            <td class="spec-name">Bảo mật</td>
+                                            <td class="spec-value">Face ID, Được kích hoạt bởi camera trước TrueDepth để nhận dạng khuôn mặt</td>
+                                        </tr>
+                                        <tr class="odd">
+                                            <td class="spec-name">Chống nước</td>
+                                            <td class="spec-value">IP68 (độ sâu tối đa 6 mét trong tối đa 30 phút) theo tiêu chuẩn IEC 60529</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <!-- Đăng ký nhận tin -->
+            <div class="footer__newletter" style="margin-top: 0;">
+                <div class="row">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="heading__newletter-title">Đăng ký nhận tin từ Đức Trọng Mobile</div>
+                        <p class="heading__newletter-info">Thông tin sản phẩm mới nhất và chương trình khuyến mãi</p>
+                        <div class="newletter">
+                            <input id="newletter-email" class="newletter-text" placeholder="Email của bạn" type="email" />
+                            <button type="button" id="newletter-btn" class="newletter-btn">Đăng ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer__upper">
+                    <div class="grid ">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="header__navbar-logo footer__logo">
+                                    <a href="index.html">DUC TRONG</a>
+                                    <a href="/">
+                                        <img src="./assets/img/logo-apple1.png" alt="" />
+                                    </a>
+                                </div>
+                                <div class="footer-follow__about">
+                                    <p class="footer-follow__text">Năm 2023, DucTrong Mobile trở thành đại lý ủy quyền của Apple. Chúng tôi phát triển chuỗi cửa hàng tiêu chuẩn và Apple Mono Store nhằm mang đến trải nghiệm tốt nhất về sản phẩm và dịch vụ của Apple cho người dùng Việt Nam.</p>
+                                </div>
+                                <div class="footer-follow__socials">
+                                    <ul class="networks">
+                                        <li class="facebook">
+                                            <a href="" class="">
+                                                <img src="./assets/img/facebook.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="tiktok">
+                                            <a href="./assets/img/tiktok.png" class="">
+                                                <img src="./assets/img/tiktok.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="zalo">
+                                            <a href="" class="">
+                                                <img src="./assets/img/zalo.png" alt="" />
+                                            </a>
+                                        </li>
+                                        <li class="youtube">
+                                            <a href="" class="">
+                                                <img src="./assets/img/youtube.png" alt="" />
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-block">
+                                    <div class="footer-title">
+                                        <span>Thông tin</span>
+                                        <i class="footer-icon fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Giới thiệu</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tin tức </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Check IMEI</a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Phương thức thanh toán </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Bảo hành và sữa chữa </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tuyển dụng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Đánh giá chất lượng, khiếu nại </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-block">
+                                    <div class="footer-title">
+                                        <span>Chính sách </span>
+                                        <i class="footer-icon fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Thu cũ đổi mới </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Giao hàng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Hủy giao dịch </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Đổi trả </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Bảo hành </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Giải quyết khiếu nại </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Bảo mật thông tin </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Trả góp </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-block">
+                                    <div class="footer-title">
+                                        <span>Địa chỉ và Liên hệ</span>
+                                        <i class="footer-icon fa-solid fa-chevron-down"></i>
+                                    </div>
+                                    <ul class="footer-list">
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tài khoản của tôi </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Đơn đặt hàng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Hệ thống cửa hàng </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Tìm Store trên Goole Map </a>
+                                        </li>
+                                        <li class="footer-item">
+                                            <a href="" class="footer-item-link"> Mua hàng: <a href="tel: +84334997497" class="footer-item-tel">033.4997.497</a></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__lower">
+                    <span class="footer__lower-text">© All Rights Reserved By <a href="./index.html" class="footer__lower-text-link">Đức Trọng Mobile</a></span>
+                </div>
+            </footer>
+        <script src="./assets/js/header-search.js"></script>
+        <script src="./assets/js/slider.js"></script>
+
+        <script>
+            // Navbar-tablet-mobile
+            bars = document.querySelector(".burger");
+            navBar = document.querySelector(".nav__mobile");
+
+            bars.onclick = function () {
+                //Toggle Nav
+                navBar.classList.toggle("active");
+                //Burger Animation
+                bars.classList.toggle("toggle");
+            };
+
+            //Footer
+            const footerShows = document.querySelectorAll(".footer-block");
+            
+            footerShows.forEach(function (footerShow) {
+                const footerList = footerShow.querySelector(".footer-list");
+                
+                footerShow.addEventListener("click", function () {
+                    footerList.classList.toggle("show");
+                });
+            });
+
+            // Left image Product-detail
+            function img(anything) {
+                document.querySelector('.slide').src = anything;
+            }
+        </script>
+    </body>
+</html>
